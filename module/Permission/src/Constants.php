@@ -5,7 +5,7 @@ namespace Permission;
 class Constants
 {
     
-    public const ROLE_USER = '';
+    public const ROLE_USER = 'user';
     
     public const ROLE_RECEPTION = 'reception';
     
