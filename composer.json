@@ -1,0 +1,16 @@
+{
+    "require": {
+        "laminas/laminas-permissions-acl": "^2.7",
+        "laminas/laminas-permissions-rbac": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clinical\\": "module/Clinical/src/",
+            "Invoice\\": "module/Invoice/src/",
+            "Library\\": "module/Library/src/",
+            "Payment\\": "module/Payment/src/",
+            "Permission\\": "module/Permission/src/",
+            "User\\": "module/User/src/"
+        }
+    }
+}
