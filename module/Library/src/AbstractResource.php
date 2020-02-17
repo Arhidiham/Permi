@@ -1,6 +1,15 @@
 <?php
 namespace Library;
 
+/**
+ * The abstract resource class is used to automate the boileplat required
+ * to setup a generic resource for permission checking.
+ * 
+ * @package Library
+ * 
+ * @author Quintin Venter
+ * @since  17 February 2020
+ */
 abstract class AbstractResource implements ResourceInterface
 {
     
@@ -12,6 +21,13 @@ abstract class AbstractResource implements ResourceInterface
      */
     protected static $resourceId;
     
+    /**
+     * Simply gets the resurce Id from the static resource configured
+     * for this class.
+     * 
+     * {@inheritDoc}
+     * @see \Laminas\Permissions\Acl\Resource\ResourceInterface::getResourceId()
+     */
     public function getResourceId()
     {
         $id = null;

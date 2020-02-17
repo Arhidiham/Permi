@@ -8,10 +8,25 @@ use Library\AbstractOwnedResource;
 class Invoice extends AbstractOwnedResource
 {
     
+    /**
+     * The entity Id from the database.
+     * 
+     * @var int
+     */
     protected $id;
     
+    /**
+     * The resource type unique name.
+     * 
+     * @var string
+     */
     protected static $resourceId = Constants::RESOURCE_INVOICE;
     
+    /**
+     * Generates a random Id for this entity.
+     * 
+     * @param UserInterface $owner
+     */
     public function __construct(UserInterface $owner)
     {
         $this->id = mt_rand(1, 10000);
