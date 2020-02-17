@@ -12,20 +12,5 @@ class Permission
         return $cache->isAllowed($user, $resource, $permission);
     }
 
-    /*
-    protected static function allowOnResourceType(UserInterface $user, string $permission, string $resource): bool
-    {
-        $permission = PermissionCache::getInstance()->getCache();
-        
-        return false;
-    }
-
-    protected static function allowOnResourceInstance(UserInterface $user, string $permission, ResourceInterface $resource): bool
-    {
-        $permission = PermissionCache::getInstance()->getCache();
-
-        return false;
-    }
-    */
 }
 
